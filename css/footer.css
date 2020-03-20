@@ -1,0 +1,122 @@
+footer {
+	/* background: linear-gradient(to right, #71B280, #134E5E); */
+	background-color: rgb(28, 48, 32);
+	font: bold 16px sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 55px 50px;
+	text-align: left;
+	width: 100%;
+}
+
+footer .footer-izq, footer .footer-medio, footer .footer-derecha {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer izquierda */
+
+footer .footer-izq {
+	width: 40%;
+}
+
+/* logo */
+
+footer .textoLogo {
+	font-size: 2em;
+	font-weight: normal;
+}
+
+/* Footer links */
+
+footer .footer-links {
+	color: #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+footer .footer-links a {
+	color: inherit;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.8;
+	text-decoration: none;
+}
+
+footer .copy-texto {
+	color: lightgray;
+	font-size: 1.2rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer medio */
+
+footer .footer-medio {
+	width: 35%;
+}
+
+/* Iconos medio */
+
+.footer-medio div {
+	margin: .5rem 0;
+}
+
+footer .footer-medio i {
+	background-color: #33383b;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 2rem;
+	height: 38px;
+	line-height: 42px;
+	text-align: center;
+	vertical-align: middle;
+	width: 38px;
+}
+
+footer .footer-medio p {
+	color: #ffffff;
+	display: inline-block;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+footer .footer-medio p a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Footer Right */
+
+footer .footer-derecha {
+	width: 20%;
+}
+
+footer .footer-redes span {
+	color: white;
+	display: block;
+	font-weight: bold;
+}
+
+footer .footer-icons {
+	margin-top: 2rem;
+}
+
+/* Iconos redes sociales */
+footer .footer-icons a {
+	background-color: #33383b;
+	border-radius: 2px;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 2rem;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 5px;
+	margin-right: 3px;
+	text-align: center;
+	width: 35px;
+}
+
+.footer-derecha a:hover {
+	background-color: rgb(255, 115, 0);
+}
