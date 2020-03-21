@@ -51,4 +51,21 @@
     footer .footer-medio .icono-tlf {
         padding-right: 2.8em;
     }
+
+    section.features {
+        align-content: center;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    section.features .tarjeta-redonda {
+        height: 250px;
+        margin: 1rem;
+        width: 250px;
+    }
+
+    .titulo-seccion .text {
+        font-size: 10vw;
+    }
+
 }
