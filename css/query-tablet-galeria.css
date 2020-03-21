@@ -1,0 +1,13 @@
+/* Tablet */
+@media screen and (max-width: 800px) {
+    .columna {
+      flex: 50%;
+      max-width: 32%;
+    }
+    .row {
+      justify-content: center;
+    }
+    section.galeria img {
+      filter: brightness(100%);
+    }
+  }
