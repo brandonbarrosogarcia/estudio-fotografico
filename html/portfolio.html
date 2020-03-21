@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <script src="https://kit.fontawesome.com/792b037a63.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/query-movil-Tablet.css">
+    <link rel="stylesheet" href="../css/query-desktop.css">
+    <title>Proyecto Brandon</title>
+</head>
+
+<body>
+    <!-- Menú navegación  -->
+    <nav>
+        <ul class="menu">
+            <a href="../index.html" class="textoLogo">Grab</a>
+            <li class="item"><a href="../index.html">Inicio</a></li>
+            <li class="item"><a href="#">Portfolio</a></li>
+            <li class="item"><a href="galeria.html">Galería</a></li>
+            <li class="item"><a href="contactanos.html">Contáctanos</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <!-- Fin menú navegación -->
+
+    <!-- Foto Banner -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>La fotografia no puede cambiar la realidad pero sí puede mostrarla</h1>
+            <p>En nuestro estudio, nos encargamos de inmortalizar tus mejores momentos para que los puedas revivir.
+            </p>
+        </div>
+        <div class="overlay"></div>
+
+    </div>
+    <!-- Fin  Foto Banner -->
+
+    <!-- Portfolio -->
+    <section class="features">
+        <div class="tarjeta-redonda">
+            <div class="contenido-tarjeta">
+                <div class="delante">
+                    <i class="fas fa-sliders-h"></i>
+                    <h3>Edición</h3>
+                    <p>Contamos con un equipo de profesionales que editaran tus fotos con la mejor calidad.</p>
+                </div>
+                <div class="detras">
+                    <img src="../img/flipcard1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta-redonda">
+            <div class="contenido-tarjeta">
+                <div class="delante">
+                    <i class="fas fa-camera"></i>
+                    <h3>Profesionales</h3>
+                    <p>Nuestros fotografos tienen extensos conocimientos sobre fotografia y una extensa experiencia en
+                        el
+                        sector.</p>
+                </div>
+                <div class="detras">
+                    <img src="../img/flipcard2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta-redonda">
+            <div class="contenido-tarjeta">
+                <div class="delante">
+                    <i class="fas fa-photo-video"></i>
+                    <h3>Fotos y video</h3>
+                    <p>Realizamos sesiones tanto de fotografía como de video para empresas y particulares.</p>
+                </div>
+                <div class="detras">
+                    <img src="../img/flipcard3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="fotografos">
+        <div class="titulo-seccion">
+            <div class="text">Nuestro Equipo</div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../img/persona1.jpg">
+            <h2>Jonas Smith</h2>
+            <p class="subtitulo">Fotógrafo profesional</p>
+            <p class="descripcion">Más de 5 años de experiencia</p>
+            <button><a href="contactanos.html">Contactar</a></button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../img/persona2.jpg">
+            <h2>Sara Reus</h2>
+            <p class="subtitulo">Fotógrafa profesional</p>
+            <p class="descripcion">Especializada en retratos fotográficos.</p>
+            <button><a href="contactanos.html">Contactar</a></button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../img/persona3.jpg">
+            <h2>Yasuo Lopez</h2>
+            <p class="subtitulo">Editor y diseñador</p>
+            <p class="descripcion">Master en edición de imagen y video</p>
+            <button><a href="contactanos.html">Contactar</a></button>
+        </div>
+
+        <div class="tarjeta">
+            <img src="../img/persona4.jpg">
+            <h2>Janna Evans </h2>
+            <p class="subtitulo">Fotógrafa profesional</p>
+            <p class="descripcion">Especializada en paisajes.</p>
+            <button><a href="contactanos.html">Contactar</a></button>
+        </div>
+
+    </section>
+
+    <!-- Fin Porfolio -->
+
+    <!-- Slider -->
+    <section class="slider">
+        <h2>Algunos de nuestros trabajos</h2>
+        <div class="slider-container">
+            <!-- diapositivas -->
+            <div class="diapositiva fade">
+                <img src="../img/galeria/adventure-calm-clouds-dawn-414171.jpg" style="width:100%">
+            </div>
+
+            <div class="diapositiva fade">
+                <img src="../img/galeria/foto4.jpg" style="width:100%">
+            </div>
+
+            <div class="diapositiva fade">
+                <img src="../img/galeria/foto19.jpg" style="width:100%">
+            </div>
+
+        </div>
+
+        <!-- botones -->
+        <div class="botones">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+
+    <!-- Fin slider -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Izquierda footer -->
+        <div class="footer-izq">
+            <h3 class="textoLogo">GRAB</h3>
+            <div class="footer-links">
+                <a href="#">Inicio - </a>
+                <a href="#">Portolio - </a>
+                <a href="#">Galería - </a>
+                <a href="#">Contáctanos</a>
+            </div>
+            <p class="copy-texto">Brandon Barroso García © 2020</p>
+        </div>
+
+        <!-- Medio footer -->
+        <div class="footer-medio">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p> Santa Cruz de Tenerife</p>
+            </div>
+            <div class="icono-tlf">
+                <i class="fa fa-phone-alt"></i>
+                <p>+18 666.666.666</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:foto@gmail.com">fotografia@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Derecha footer -->
+        <div class="footer-derecha">
+            <div class="footer-redes">
+                <span>Redes sociales</span>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Fin footer -->
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

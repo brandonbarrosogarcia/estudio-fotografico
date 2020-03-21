@@ -1,0 +1,250 @@
+section.features {
+    background-color: rgb(59, 87, 87);
+    color: hsl(0, 0%, 44%);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    padding: 0.5rem;
+}
+
+section.features i {
+    color: black;
+    display: block;
+    font-size: 5rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+section.features h3 {
+    border-bottom: 2px solid rgb(32, 178, 93);
+    font-family: "Caladea", serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+section.features p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.tarjeta-redonda {
+    background-color: transparent;
+    border-radius: 100%;
+    height: 270px;
+    perspective: 1000px;
+    width: 270px;
+}
+
+.contenido-tarjeta {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    width: 100%;
+}
+
+.tarjeta-redonda:hover .contenido-tarjeta {
+    transform: rotateY(180deg);
+}
+
+.delante,
+.detras {
+    -webkit-backface-visibility: hidden;
+    align-content: center;
+    backface-visibility: hidden;
+    border-radius: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    padding: 1.3rem;
+    position: absolute;
+    width: 100%;
+}
+
+.delante {
+    background-color: white;
+    color: black;
+}
+
+.detras {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transform: rotateY(180deg);
+}
+
+.detras img {
+    height: auto;
+    width: 400px;
+}
+
+/* Tarjetas */
+section.fotografos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section.fotografos .tarjeta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: arial;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+section.fotografos .subtitulo {
+    color: grey;
+    font-size: 18px;
+}
+
+section.fotografos button {
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+section.fotografos h2 {
+    font-size: 2.5rem;
+}
+
+section.fotografos .descripcion {
+    font-size: 1.3rem;
+}
+
+section.fotografos a {
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+section.fotografos .subtitulo,
+section.fotografos h2,
+section.fotografos p {
+    margin: 2rem 0;
+}
+
+section.fotografos button:hover {
+    opacity: 0.7;
+}
+
+section.fotografos .tarjeta img {
+    width: 100%;
+}
+
+/* imagen paralax */
+.titulo-seccion {
+    background-attachment: fixed;
+    background-image: url(../img/galeria/foto21.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* titulo overlay cutout */
+.titulo-seccion .text {
+    background-color: white;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+    left: 50%;
+    margin: 0 auto;
+    mix-blend-mode: screen;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+/* Slider */
+section.slider {
+    background-color: rgb(34, 33, 33);
+    margin: 5rem auto;
+    padding: 0;
+    width: 100%;
+}
+
+section.slider .slider-container {
+    margin: 3rem auto;
+    padding: 1;
+    position: relative;
+    width: 60%;
+}
+
+section.slider h2 {
+    background-color: rgb(59, 87, 87);
+    color: whitesmoke;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 800;
+    padding: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+section.slider .botones {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+section.slider .diapositiva {
+    display: none;
+}
+
+.dot {
+    background-color: rgb(197, 195, 195);
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: 2px;
+    transition: background-color 0.9s ease;
+    width: 15px;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    animation-duration: 1.5s;
+    animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
