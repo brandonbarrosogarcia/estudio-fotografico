@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+img {
+    width: 100%;
+}
+
+.columna {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform .2s ease-in;
+    filter: brightness(60%);
+}
+
+section.galeria {
+    margin-top: 5rem;
+    background-color: black;
+}
+
+section.galeria h2 {
+    font-family: 'Gentium Basic', serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: .1rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+section.galeria h2 {
+    background-color: #3f5042;
+}
+
+section.galeria img:hover {
+    transform: scale(1.02);
+    filter: brightness(100%);
+}
