@@ -1,0 +1,54 @@
+/* Query telefono y tablets*/
+
+@media all and (max-width: 760px) {
+    html {
+        font-size: 10px;
+    }
+
+    .banner-text {
+        width: 60vw;
+    }
+
+    section.texto-imagen,
+    section.texto-imagen-rev {
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.texto-imagen .imagen,
+    section.texto-imagen-rev .imagen {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    section.texto-imagen img,
+    section.texto-imagen-rev img {
+        margin: 3rem 0;
+        max-width: 300px;
+        min-width: 10px;
+    }
+
+    section.texto-imagen-rev {
+        border: none;
+    }
+
+    footer .footer-izq,
+    footer .footer-medio,
+    footer .footer-derecha {
+        display: block;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .footer-medio i {
+        margin-left: 0;
+    }
+
+    footer .footer-medio .icono-tlf {
+        padding-right: 2.8em;
+    }
+}
