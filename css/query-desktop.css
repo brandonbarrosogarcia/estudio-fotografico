@@ -1,0 +1,22 @@
+
+/* Query para pc */
+@media all and (min-width: 760px) {
+	.menu {
+		justify-content: flex-end;
+	}
+	.toggle {
+		display: none;
+	}
+	.textoLogo {
+		margin-right: auto;
+	}
+	.item {
+		display: block;
+		order: 1;
+		width: auto;
+	}
+	.menu li a {
+		padding: 1.3rem;
+	}
+
+}
