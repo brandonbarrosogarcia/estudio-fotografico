@@ -15,4 +15,110 @@ body {
     background: #f1f1f1;
 }
 
+/* Imagen banner */
+.banner  {
+    background-image: url(../img/person-on-a-bridge-near-a-lake-747964.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: block;
+   z-index: 1;
+}
 
+/* overlay banner  */
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: 2;
+}
+
+.banner-text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 30px;
+    left: 10vw;
+    z-index: 20;
+    width: 30vw;
+    color: white;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    text-align: left;
+    font-family: 'Gentium Basic', serif;
+    font-size: 2.5rem;
+    word-spacing: .4rem;
+    white-space: pre-wrap;
+    
+}
+
+.banner-text p {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+    padding: .4rem;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    border-left: 1px solid lightgreen;
+    line-height: 1.6rem;
+    word-spacing: .4rem;
+    
+}
+
+.boton-colores {
+    display: block;
+    height: 2.8rem;
+    width: 9rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: none;
+    filter: hue-rotate(0deg);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #007CFF, #FF3052, #FFCB00);
+    border-image-slice: 1;
+    overflow: hidden;
+    color: #F90;
+    transition: filter 4s, transform .5s ease-in-out;
+}
+.boton-colores:hover {
+    filter: hue-rotate(360deg);
+
+}
+
+.boton-colores a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.boton-colores i {
+    vertical-align: bottom;
+    color: lightgreen;
+    font-size: 1.4rem;
+    transition: all.4s ease;
+    transform: translateX(0px);
+}
+
+.boton-colores:hover i {
+    animation: flechaMover 1s infinite alternate;
+}
+
+/* animación flecha  boton*/
+@keyframes flechaMover {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
