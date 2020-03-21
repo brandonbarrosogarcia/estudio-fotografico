@@ -17,6 +17,8 @@ body {
 
 /* Imagen banner */
 .banner  {
+    position: relative;
+    max-width: 100vw;
     background-image: url(../img/person-on-a-bridge-near-a-lake-747964.jpg);
     background-repeat: no-repeat;
     background-position: center center;

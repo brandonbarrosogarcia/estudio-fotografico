@@ -17,6 +17,9 @@
 	}
 	.menu li a {
 		padding: 1.3rem;
+    }
+    
+	.banner-text {
+		top: 10%;
 	}
-
 }
