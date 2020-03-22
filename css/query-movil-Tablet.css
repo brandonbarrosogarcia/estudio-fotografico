@@ -93,5 +93,8 @@
     section.contact-form {
         background-position: bottom;
     }
+    section.slider .slider-container {
+        width: 85%;
+    }
 
 }
