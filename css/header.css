@@ -16,6 +16,8 @@ a {
 }
 
 .item a:hover {
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
     background-color: rgb(192, 192, 192);
 }
@@ -38,20 +40,31 @@ a {
 /* menu  para teléfonos*/
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .toggle {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
 }
 
 .item {
     width: 100%;
     text-align: center;
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     display: none;
 }
 
@@ -64,4 +77,3 @@ a {
     display: block;
     padding: 1.2rem 0;
 }
-
