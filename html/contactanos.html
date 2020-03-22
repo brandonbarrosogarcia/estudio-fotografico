@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contactanos.css">
+    <script src="https://kit.fontawesome.com/792b037a63.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/query-movil-Tablet.css">
+    <link rel="stylesheet" href="../css/query-desktop.css">
+    <title>Proyecto Brandon</title>
+</head>
+
+<body>
+    <!-- Menú navegación  -->
+    <nav>
+        <ul class="menu">
+            <a href="../index.html" class="textoLogo">Grab</a>
+            <li class="item"><a href="../index.html">Inicio</a></li>
+            <li class="item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="item"><a href="galeria.html">Galería</a></li>
+            <li class="item"><a href="#">Contáctanos</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <!-- Fin menú navegación -->
+
+    <!-- Formulario contactanos -->
+    <section class="contact-form">
+        <div class="contactanos-formulario">
+            <form action="/contactanos.php" method="POST">
+                <h2>Contáctanos</h2>
+
+                <div class="input-container">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="firstname" placeholder="Tu nombre...">
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Tu email...">
+                </div>
+
+                <div class="input-container">
+                    <label for="telefono">Número de telefono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Tu número de teléfono...">
+                </div>
+
+
+                <div class="input-container">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <div class="input-enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- fin formulario contact -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Izquierda footer -->
+        <div class="footer-izq">
+            <h3 class="textoLogo">GRAB</h3>
+            <div class="footer-links">
+                <a href="#">Inicio - </a>
+                <a href="#">Portolio - </a>
+                <a href="#">Galería - </a>
+                <a href="#">Contáctanos</a>
+            </div>
+            <p class="copy-texto">Brandon Barroso García © 2020</p>
+        </div>
+
+        <!-- Medio footer -->
+        <div class="footer-medio">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p> Santa Cruz de Tenerife</p>
+            </div>
+            <div class="icono-tlf">
+                <i class="fa fa-phone-alt"></i>
+                <p>+18 666.666.666</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:foto@gmail.com">fotografia@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Derecha footer -->
+        <div class="footer-derecha">
+            <div class="footer-redes">
+                <span>Redes sociales</span>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Fin footer -->
+
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>

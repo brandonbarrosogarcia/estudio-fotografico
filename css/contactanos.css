@@ -1,0 +1,81 @@
+section.contact-form {
+    background-attachment: fixed;
+    background-color: cadetblue;
+    background-image: url(../img/foto-contactform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem;
+}
+
+.contactanos-formulario {
+    background-color: rgba(0, 0, 0, 0.76);
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 50%;
+}
+
+.contactanos-formulario h2 {
+    color: white;
+    font-family: 'Caladea', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contactanos-formulario label {
+    color: white;
+    display: block;
+    font-family: 'Caladea', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contactanos-formulario textarea {
+    height: 150px;
+    width: 90%;
+}
+
+.contactanos-formulario .input-container {
+    background-color: transparent;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+input[type=text],
+textarea {
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    resize: none;
+    transition: .4s ease-in-out;
+    width: 90%;
+}
+
+input[type=text]:focus,
+input[type=text]:hover,
+textarea:hover,
+textarea:focus {
+    border: solid gold;
+    width: 99%;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+    transition: background-color .1s ease;
+    width: 70%;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(33, 68, 34);
+}
