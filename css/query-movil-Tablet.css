@@ -64,8 +64,9 @@
         width: 250px;
     }
 
-    .titulo-seccion .text {
-        font-size: 10vw;
+    .titulo-seccion .text,.titulo-seccion-2 .text {
+        font-size: 12vw;
+        width: 80%;
     }
 
     .contactanos-formulario {

@@ -3,8 +3,9 @@ section.features {
     color: hsl(0, 0%, 44%);
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem 0;
     padding: 0.5rem;
+    margin-bottom: 7rem;
+    border: 1px solid black;
 }
 
 section.features i {
@@ -89,12 +90,18 @@ section.fotografos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 1px solid black;
+    padding-bottom: 5rem;
+    margin-top: 1rem;
+    background-color: white;
+
 }
 
 section.fotografos .tarjeta {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     font-family: arial;
     margin: 1rem;
+    margin-top: 5rem;
     max-width: 300px;
     text-align: center;
 }
@@ -122,7 +129,7 @@ section.fotografos .descripcion {
 }
 
 section.fotografos a {
-    color: white;
+    color: #F1F1F1;
     display: block;
     font-size: 1.5rem;
     text-decoration: none;
@@ -144,9 +151,8 @@ section.fotografos .tarjeta img {
 }
 
 /* imagen paralax */
-.titulo-seccion {
+.titulo-seccion, .titulo-seccion-2{
     background-attachment: fixed;
-    background-image: url(../img/galeria/foto21.jpg);
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -155,8 +161,20 @@ section.fotografos .tarjeta img {
     width: 100%;
 }
 
+.titulo-seccion {
+    background-image: url(../img/galeria/foto21.jpg);
+    /* background-image: url(../img/fondo-texto3.jpg); */
+}
+
+.titulo-seccion-2 {
+    background-image: url(../img/fondo-texto5.jpg);
+    height: 400px;
+}
+
+
+
 /* titulo overlay cutout */
-.titulo-seccion .text {
+.titulo-seccion .text, .titulo-seccion-2 .text {
     background-color: white;
     color: black;
     font-size: 5vw;
@@ -175,7 +193,7 @@ section.fotografos .tarjeta img {
 /* Slider */
 section.slider {
     background-color: rgb(34, 33, 33);
-    margin: 5rem auto;
+    margin: 0auto;
     padding: 0;
     width: 100%;
 }
