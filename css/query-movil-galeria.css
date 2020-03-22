@@ -1,15 +1,20 @@
-
 /* Movil */
 @media screen and (max-width: 600px) {
-    .columna {
-      flex: 100%;
-      max-width: 100%;
-    }
-    section.galeria img:hover {
-      transform: none;
-    }
-    section.galeria img {
-      filter: brightness(100%);
-    }
+  .columna {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
-  
+
+  section.galeria img:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  section.galeria img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}

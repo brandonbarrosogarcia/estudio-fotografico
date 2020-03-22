@@ -1,13 +1,20 @@
 /* Tablet */
 @media screen and (max-width: 800px) {
-    .columna {
-      flex: 50%;
-      max-width: 32%;
-    }
-    .row {
-      justify-content: center;
-    }
-    section.galeria img {
-      filter: brightness(100%);
-    }
+  .columna {
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 32%;
   }
+
+  .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  section.galeria img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+}

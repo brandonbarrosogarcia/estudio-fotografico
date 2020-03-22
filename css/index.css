@@ -1,8 +1,15 @@
 section.texto-imagen,
 section.texto-imagen-rev {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: hsl(0, 0%, 44%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     margin: 0 auto;
     margin-bottom: 3%;
@@ -37,6 +44,7 @@ section.texto-imagen-rev p {
 
 section.texto-imagen .imagen,
 section.texto-imagen-rev .imagen {
+    -ms-flex-negative: 1;
     flex-shrink: 1;
 }
 
@@ -51,22 +59,32 @@ section.texto-imagen-rev .imagen {
 section.texto-imagen img,
 section.texto-imagen-rev img {
     border-radius: 10%;
+    -webkit-box-shadow: 4px 8px 5px 2px #888888;
     box-shadow: 4px 8px 5px 2px #888888;
+    -webkit-filter: blur(.7px);
     filter: blur(.7px);
     height: auto;
     max-width: 500px;
     min-width: 300px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     width: 100%;
 }
 
 section.texto-imagen-rev {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
     flex-flow: row-reverse;
 }
 
 section.texto-imagen img:hover,
 section.texto-imagen-rev img:hover {
     border-radius: 5%;
+    -webkit-box-shadow: 10px 10px 7px 10px #888888;
     box-shadow: 10px 10px 7px 10px #888888;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }

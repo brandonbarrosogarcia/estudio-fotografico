@@ -1,3 +1,4 @@
+
 section.contact-form {
     background-attachment: fixed;
     background-color: cadetblue;
@@ -51,6 +52,8 @@ textarea {
     overflow: hidden;
     padding: 1rem;
     resize: none;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
     width: 90%;
 }
@@ -72,6 +75,8 @@ input[type=submit] {
     display: block;
     margin: 0 auto;
     padding: 12px 20px;
+    -webkit-transition: background-color .1s ease;
+    -o-transition: background-color .1s ease;
     transition: background-color .1s ease;
     width: 70%;
 }

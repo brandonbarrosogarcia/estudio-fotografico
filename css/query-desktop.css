@@ -1,24 +1,31 @@
-
 /* Query para pc */
 @media all and (min-width: 760px) {
 	.menu {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
 		justify-content: flex-end;
 	}
+
 	.toggle {
 		display: none;
 	}
+
 	.textoLogo {
 		margin-right: auto;
 	}
+
 	.item {
 		display: block;
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
 		order: 1;
 		width: auto;
 	}
+
 	.menu li a {
 		padding: 1.3rem;
-    }
-    
+	}
+
 	.banner-text {
 		top: 10%;
 	}

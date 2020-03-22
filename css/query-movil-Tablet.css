@@ -11,14 +11,24 @@
 
     section.texto-imagen,
     section.texto-imagen-rev {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
         flex-flow: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
     section.texto-imagen .imagen,
     section.texto-imagen-rev .imagen {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         justify-items: center;
         width: 100%;
@@ -53,8 +63,14 @@
     }
 
     section.features {
+        -ms-flex-line-pack: center;
         align-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
     }
 
@@ -64,7 +80,8 @@
         width: 250px;
     }
 
-    .titulo-seccion .text,.titulo-seccion-2 .text {
+    .titulo-seccion .text,
+    .titulo-seccion-2 .text {
         font-size: 12vw;
         width: 80%;
     }
