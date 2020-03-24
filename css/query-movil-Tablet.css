@@ -96,5 +96,7 @@
     section.slider .slider-container {
         width: 85%;
     }
-
+    .titulo-seccion video {
+        display: none;
+    }
 }
